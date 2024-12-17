@@ -1,0 +1,35 @@
+<style>
+  
+</style>
+<div class="page-width">
+  <h1> {{ section.settings.heading_text }}</h1>
+  <p>{{section.setting.paragraph_text }}</p>
+</div>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Class 1",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading_text",
+        "label": "heading"
+      },
+      {
+        "type": "textarea",
+        "id": "paragraph_text",
+        "label": "teatarea"
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Class 1"
+      }
+    ]
+  }
+{% endschema %}
